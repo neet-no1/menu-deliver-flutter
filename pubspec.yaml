@@ -39,6 +39,14 @@ dependencies:
   carousel_slider: ^4.0.0
   new_gradient_app_bar: ^0.2.0
 
+  openapi:
+    git:
+      url: https://github.com/neet-no1/menu-deliver-dart-client.git
+  dio: 4.0.0
+  intl: ^0.17.0
+  flutter_flavor: ^3.0.3
+  flutter_flavorizr: ^2.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -91,3 +99,38 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flavorizr:
+  app:
+    android:
+      flavorDimensions: "flavor-type"
+    ios:
+
+  flavors:
+    local:
+      app:
+        name: "アプリ名（local）"
+
+      android:
+        applicationId: "com.example.sample_flutter.local"
+
+      ios:
+        bundleId: "com.example.sample_flutter.local"
+
+    dev:
+      app:
+        name: "アプリ名（dev）"
+
+      android:
+        applicationId: "com.example.sample_flutter.dev"
+      ios:
+        bundleId: "com.example.sample_flutter.dev"
+
+    prod:
+      app:
+        name: "アプリ名"
+
+      android:
+        applicationId: "com.example.sample_flutter"
+      ios:
+        bundleId: "com.example.sample_flutter"

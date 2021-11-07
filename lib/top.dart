@@ -42,6 +42,18 @@ class TopWidget extends StatelessWidget {
           ),
         ),
         MediaCardLarge(size),
+        RichText(
+          text: TextSpan(
+            style: DefaultTextStyle.of(context).style,
+            children: [
+              TextSpan(text: '*', style: TextStyle(color: Colors.blue)),
+              TextSpan(
+                  text: '記事', style: TextStyle(fontWeight: FontWeight.bold)),
+              TextSpan(text: '*', style: TextStyle(color: Colors.blue)),
+            ],
+          ),
+        ),
+        MediaCardLarge(size),
       ]),
     );
   }
